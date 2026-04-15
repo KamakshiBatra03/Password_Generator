@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="box">
+<div id="container">
+    <div id="heading">
+        <h2>Random Password Generator</h2>
+    </div>
+    <div id="display">
+        <input type="text" class="pass">
+        <div id="icon">
+            <i class="fa-solid fa-copy"></i>
+        </div>
+    </div>
+    <div id="progress-bar">
+          <input type="range" id="bar" min="3" max="30" value="8">       
+    </div>
+    <div id="msg">
+         <p>password length</p>
+         <span>8</span>
+    </div>
+    <div class="options">
+       <div class="row">
+        <label for="UpperCase">Include UpperCase Letters(A-Z)</label>
+             <input class="cc" type="checkbox" name="UpperCase" value="uc">
+       </div>
+       <div class="row">
+        <label for="LowerCase">Include LowerCase Letters(a-z)</label>
+        <input class="cc" type="checkbox" name="LowerCase" value="lc">
+       </div>
+       <div class="row">
+        <label for="Numbers"> Include Numbers(0-9)</label>
+        <input class="cc" type="checkbox" name="Numbers" value="no">
+       </div>
+        <div class="row">
+            <label for="characters">Include Special Characters(@!#$^*)</label>
+              <input class="cc"type="checkbox" name="characters" value="ch">
+        </div>
+    </div>
+    <div id="btn">
+        <input id="gen" type="button" value="Generate Password">
+    </div>
+
+</div>
+</div>
+
+
+<script src="code.js"></script>  
+</body>
+</html>
